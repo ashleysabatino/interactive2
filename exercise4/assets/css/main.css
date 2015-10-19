@@ -1,0 +1,298 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: black;
+}
+
+.canvas {
+	width: 900px;
+	height: 556px;
+	margin: 100px auto;
+	background: white;
+	position: relative;
+}
+
+.canvas.one {
+	background: orange;
+}
+
+.object {
+	position:absolute;
+}
+
+/*Sphere*/
+.sphere {
+	background: white;
+	height:300px;
+	width: 300px;
+	border-radius: 50%;
+	bottom:100px;
+	left:500px;
+	z-index: 5;
+}
+
+/*Pumpkin*/
+.pumpkin {
+	background: green;
+	height:150px;
+	width: 150px;
+	border-radius: 40%;
+	bottom:150px;
+	left:440px;
+	z-index: 3;
+}
+
+/*cup*/
+.cup-container {
+	height:200px;
+	width:100px;
+	right:600px;
+	bottom:120px;
+	z-index:6;
+}
+
+.cup-container .glass {
+
+	border-top: 225px solid white;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	height: 0;
+	width: 100px;
+	opacity:.8;
+}
+	
+.cup-container .top {
+	width:100px;
+	height:25px;
+	border-radius: 50%;
+	background:orange;
+	opacity:.8;
+	border:solid white;
+	top:-12px;
+}
+
+
+.cup-container .bottom {
+	width:84%;
+	height:25px;
+	border-radius: 50%;
+	background:white;
+	bottom:-37px;
+	left:8px;
+}
+
+
+.cup-container .water {
+	width:93%;
+	height:25px;
+	left:4px;
+	border-radius: 50%;
+	background:white;
+	bottom:60%;
+}
+
+/*~*~*~*~*~*~*~*~*~*~*~*/
+/*Canvas Two*/
+/*~*~*~*~*~*~*~*~*~*~*~*/
+.canvas.two {
+	background: orange;
+}
+
+.vase-container {
+	height:200px;
+	width:100px;
+	right:600px;
+	bottom:120px;
+	
+}
+
+.vase-container .vaseb {
+
+	border-bottom: 225px solid white;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	height: 0;
+	width: 100px;
+	opacity:.8;
+	z-index:8;
+}
+
+.planta {
+	height:300px;
+	width:10px;
+	bottom:-25px;
+	left:10px;
+	background: green;
+}
+
+.plantb {
+	height:300px;
+	width:10px;
+	bottom:-25px;
+	left:44px;
+	background: green;
+}
+
+.plantc {
+	height:300px;
+	width:10px;
+	bottom:-25px;
+	left:80px;
+	background: green;
+}
+
+/*FLOWER A*/
+
+#flower-a {
+    background: purple;
+    width: 40px;
+    height: 40px;
+    top:-105px;
+    left:-6px;
+    position: relative;
+    text-align: center;
+}
+#flower-a:before, #flower-a:after {
+    content: "";
+    position: absolute;
+    top: 40;
+    left: 0;
+    height: 40px;
+    width: 40px;
+    background: purple;
+}
+#flower-a:before {
+    -webkit-transform: rotate(30deg);
+       -moz-transform: rotate(30deg);
+        -ms-transform: rotate(30deg);
+         -o-transform: rotate(30deg);
+}
+#flower-a:after {
+    -webkit-transform: rotate(60deg);
+       -moz-transform: rotate(60deg);
+        -ms-transform: rotate(60deg);
+         -o-transform: rotate(60deg);
+}
+
+/*FLOWER B*/
+
+#flower-b {
+    background: #580058;
+    width: 45px;
+    height: 45px;
+    top:-203px;
+    left:26px;
+    position: relative;
+    text-align: center;
+}
+#flower-b:before, #flower-b:after {
+    content: "";
+    position: absolute;
+    top: 40;
+    left: 0;
+    height: 45px;
+    width: 45px;
+    background: #580058;
+}
+#flower-b:before {
+    -webkit-transform: rotate(30deg);
+       -moz-transform: rotate(30deg);
+        -ms-transform: rotate(30deg);
+         -o-transform: rotate(30deg);
+}
+#flower-b:after {
+    -webkit-transform: rotate(60deg);
+       -moz-transform: rotate(60deg);
+        -ms-transform: rotate(60deg);
+         -o-transform: rotate(60deg);
+}
+
+/*FLOWER C*/
+
+#flower-c {
+    background:purple;
+    width: 40px;
+    height: 40px;
+    top:-145px;
+    left:64px;
+    position: relative;
+    text-align: center;
+}
+#flower-c:before, #flower-c:after {
+    content: "";
+    position: absolute;
+    top: 40;
+    left: 0;
+    height: 40px;
+    width: 40px;
+    background: purple;
+}
+#flower-c:before {
+    -webkit-transform: rotate(30deg);
+       -moz-transform: rotate(30deg);
+        -ms-transform: rotate(30deg);
+         -o-transform: rotate(30deg);
+}
+#flower-c:after {
+    -webkit-transform: rotate(60deg);
+       -moz-transform: rotate(60deg);
+        -ms-transform: rotate(60deg);
+         -o-transform: rotate(60deg);
+}
+
+/*~*~*~*~*~*~*~*~*~*~*~*/
+
+/*Pumpkinb*/
+.pumpkinb {
+	background-image:url('../images/llama.gif');
+	background-position: top;
+	height:150px;
+	width: 150px;
+	border-radius: 40%;
+	bottom:53px;
+	left:210px;
+	z-index: 9;
+}
+
+.pumpkinb:hover {
+	background-image:url('../images/llama.gif');
+	background-repeat:no-repeat;
+	background-position:bottom;
+}
+
+/*Magnifying Glass*/
+
+.magnifylens {
+	width:130px;
+	height:55px;
+	left:440px;
+	bottom:30px;
+	border-radius: 50%;
+	border:solid black 8px;
+	background:white;
+	-webkit-transform: rotate(-10deg);
+}
+
+
+.maghandle {
+	width:100px;
+	height:15px;
+	background: black;
+	left:550px;
+	bottom:65px;
+	-webkit-transform: rotate(-10deg);
+}
+
+/*White Board Eraser*/
+
+.eraser {
+	width: 150px;
+	height: 40px;
+	left:430px;
+	bottom:100px;
+	-webkit-transform: skew(-20deg);
+	-webkit-transform: rotate(10deg);
+	background: black;					
+}
