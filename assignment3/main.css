@@ -1,0 +1,91 @@
+* {
+box-sizing:border-box;
+}
+
+.letter {
+	width: 300px;
+	height:450px;
+	background:magenta;
+	display:inline-block;
+	position: relative;
+	margin-right:8px;
+	margin-bottom:8px;
+}
+
+
+
+.h .v1,
+.p .v1,
+.n .v1 {
+	position: absolute;
+	left:0;
+	height:100%;
+	width:6px;
+	background: black;
+	margin: 0 8px 8px 0;
+}
+
+.h .v2,
+.n .v2 {
+	position: absolute;
+	right:0;
+	height:100%;
+	width:6px;
+	background: black;
+	margin: 0 0 8px 8px;
+}
+
+.h .h1 {
+	position: absolute;
+	top:50%;
+	height:6px;
+	width:100%;
+	background: black;
+
+}
+
+.o .c1 {
+	position: absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	border:6px solid black;
+	border-radius: 50%
+}
+
+.d .c1 {
+	position: absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	border:6px solid black;
+	border-top-right-radius: 50%;
+	border-bottom-right-radius: 50%
+}
+
+.p .c1 {
+	position: absolute;
+	top:0;
+	right: 0;
+	height:50%;
+	width:100% ;
+	border: 6px solid black;
+	border-top-right-radius: 50%;
+	border-bottom-right-radius: 50%
+}
+
+
+.n .d1 {
+	position: absolute;
+	left:5px;
+	height:6px;
+	width:535px;
+	background: black;
+	transform:rotate(56.6deg);
+	transform-origin:0% 0%;
+	-webkit-transform:rotate(56.6deg);
+	-webkit-transform-origin:0% 0%;
+
+}
