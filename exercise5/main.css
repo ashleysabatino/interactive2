@@ -1,0 +1,42 @@
+/*BASE*/
+
+body {
+	background:red;
+}
+
+/*IMAGES*/
+
+.horse {
+	width:150px;
+	height:150px;
+	background: yellow;
+/*	background: url('images/whatever');*/
+}
+
+
+/*MEDIA QUERY*/
+
+@media screen and (max-width: 1024px) {
+  body { background: blue; }
+  .horse {background: magenta; }
+}
+
+@media screen and (max-width: 768px) {
+  body { background: yellow; }
+  .horse {background: cyan}
+}
+
+@media screen and (max-width: 600px) {
+  body { background: lime; }
+  .horse {background: red}
+}
+
+@media screen and (max-width: 480px) {
+  body { background: cyan; }
+  .horse {background: blue}
+}
+
+@media screen and (max-width: 320px) {
+  body { background: magenta; }
+  .horse {background: lime}
+}
