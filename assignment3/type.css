@@ -1,17 +1,44 @@
-* {
-box-sizing:border-box;
-}
+
 
 .letter {
 	width: 300px;
 	height:450px;
-	background:magenta;
+	/*background:magenta;*/
 	display:inline-block;
 	position: relative;
 	margin-right:8px;
 	margin-bottom:8px;
 }
 
+
+/*LAYERING DIVS*/
+
+.layer1 {
+	position: absolute;
+	z-index: 1;
+}
+
+.layer2 {
+	position:absolute;
+	z-index:2;
+	top:50px;
+	left:50px;
+}
+
+.layer2 div div,
+.layer2 div div:before,
+.layer2 div div:after {
+	border-color: magenta;
+}
+
+.layer2 div div.A:before,
+.layer2 div div.A:after,
+.layer2 div div.E:before {
+	background: magenta;
+}
+
+
+/*THE LETTER A*/
 
 .A{
 position:relative;
@@ -59,7 +86,7 @@ position:absolute;
 content:'';
 width:52px;
 height:39px;
-border-width:15px15px10px0;
+border-width:15px 15px 10px 0;
 border-color:#000000;
 border-style:solid;
 border-radius:0 240%180%0 /0 180%180%0;
@@ -70,7 +97,7 @@ content:'';
 bottom:0;
 width:58px;
 height:43px;
-border-width:10px15px15px0;
+border-width:10px 15px 15px 0;
 border-color:#000000;
 border-style:solid;
 border-radius:0 180%220%0 /0 180%180%0;
@@ -78,14 +105,13 @@ border-radius:0 180%220%0 /0 180%180%0;
 
 /*THE LETTER C */
 
-
 .C{
 position:relative;
 top:12.5px;
 left:10px;
 width:84px;
 height:95px;
-border-width:15px12px15px16px;
+border-width:15px 12px 15px 16px;
 border-color:#000000;
 border-style:solid;
 border-radius:50%;
@@ -117,10 +143,10 @@ top:0;
 left:0;
 width:60px;
 height:95px;
-border-width:15px15px15px0;
+border-width:15px 15px 15px 0;
 border-color:#000000;
 border-style:solid;
-border-radius:0 300%300%0 /0 180%180%0;
+border-radius:0 300% 300% 0 /0 180% 180% 0;
 }
 
 /*THE LETTER E*/
@@ -131,7 +157,7 @@ top:12.5px;
 left:10px;
 width:63px;
 height:95px;
-border-width:15px0 15px16px;
+border-width:15px 0 15px 16px;
 border-color:#000000;
 border-style:solid;
 }
@@ -153,7 +179,7 @@ top:12.5px;
 left:10px;
 width:63px;
 height:110px;
-border-width:15px0 0 16px;
+border-width:15px 0 0 16px;
 border-color:#000000;
 border-style:solid;
 }
@@ -174,7 +200,7 @@ top:12.5px;
 left:10px;
 width:84px;
 height:95px;
-border-width:15px12px15px16px;
+border-width:15px 12px 15px 16px;
 border-color:#000000;
 border-style:solid;
 border-radius:50%;
@@ -196,7 +222,7 @@ bottom:0.5px;
 right:7px;
 width:28px;
 height:36px;
-border-width:13px14px0 0;
+border-width:13px 14px 0 0;
 border-color:#000000;
 border-style:solid;
 }
@@ -209,7 +235,7 @@ top:12.5px;
 left:10px;
 width:60px;
 height:125px;
-border-width:0 16px0 16px;
+border-width:0 16px 0 16px;
 border-color:#000000;
 border-style:solid;
 }
@@ -243,7 +269,7 @@ top:12.5px;
 left:-5px;
 width:75px;
 height:66px;
-border-right:solid 16px#000000;
+border-right:solid 16px #000000;
 }
 .J:before{
 position:absolute;
@@ -255,7 +281,7 @@ height:60px;
 border-width:0 16px 15px 14px;
 border-color:#000000;
 border-style:solid;
-border-radius:0 0 75%75%;
+border-radius:0 0 75% 75%;
 }
 .J:after{
 transform:rotate(-40deg);
@@ -276,11 +302,11 @@ top:12.5px;
 left:10px;
 width:80px;
 height:125px;
-border-left:solid 16px#000000;
-overflow:hidden;
+border-left:solid 16px #000000;
+/*overflow:hidden;*/
 }
 .K:before{
-transform:skew(-43deg,0);
+transform:skew(-43deg, 0);
 position:absolute;
 content:'';
 top:0;
@@ -288,6 +314,7 @@ left:16px;
 width:19px;
 height:84px;
 background-color:#000000;
+border-bottom-left-radius: 50%;
 }
 .K:after{
 transform:skew(30deg,0);
@@ -308,7 +335,7 @@ top:12.5px;
 left:10px;
 width:63px;
 height:110px;
-border-width:0 0 15px16px;
+border-width:0 0 15px 16px;
 border-color:#000000;
 border-style:solid;
 }
@@ -322,7 +349,7 @@ top:12.5px;
 left:10px;
 width:80px;
 height:125px;
-border-width:0 15px0 15px;
+border-width:0 15px 0 15px;
 border-color:#000000;
 border-style:solid;
 }
@@ -356,7 +383,7 @@ top:12.5px;
 left:10px;
 width:63px;
 height:125px;
-border-width:0 15px0 15px;
+border-width:0 15px 0 15px;
 border-color:#000000;
 border-style:solid;
 }
@@ -379,7 +406,7 @@ top:12.5px;
 left:10px;
 width:70px;
 height:97px;
-border-width:14px16px14px16px;
+border-width:14px 16px 14px 16px;
 border-color:#000000;
 border-style:solid;
 border-radius:55% /52%;
@@ -393,17 +420,17 @@ top:12.5px;
 left:10px;
 width:60px;
 height:125px;
-border-left:solid 16px#000000;
+border-left:solid 16px #000000;
 }
 .P:before{
 position:absolute;
 content:'';
 width:56px;
 height:50px;
-border-width:13px15px13px0;
+border-width:13px 15px 13px 0;
 border-color:#000000;
 border-style:solid;
-border-radius:0 220%220%0 /0 180%180%0;
+border-radius:0 220% 220% 0 /0 180% 180%0;
 }
 
 /*THE LETTER Q*/
@@ -415,10 +442,10 @@ top:12.5px;
 left:10px;
 width:70px;
 height:97px;
-border-width:14px16px14px16px;
+border-width:14px 16px 14px 16px;
 border-color:#000000;
 border-style:solid;
-border-radius:55% /52%;
+border-radius:55% / 52%;
 }
 .Q:before{
 transform:rotate(-84deg);
@@ -428,10 +455,10 @@ top:82px;
 left:49px;
 width:16px;
 height:48px;
-border-width:16px0 13px13px;
+border-width:16px 0 13px 13px;
 border-color:#000000;
 border-style:solid;
-border-radius:200%0 0 200% /100%0 0 100%;
+border-radius:200% 0 0 200% / 100% 0 0 100%;
 }
 .Q:after{
 transform:rotate(-18deg);
@@ -452,17 +479,17 @@ top:12.5px;
 left:10px;
 width:60px;
 height:125px;
-border-left:solid 16px#000000;
+border-left:solid 16px #000000;
 }
 .R:before{
 position:absolute;
 content:'';
 width:52px;
 height:44px;
-border-width:13px15px13px0;
+border-width:13px 15px 13px 0;
 border-color:#000000;
 border-style:solid;
-border-radius:0 220%220%0 /0 180%180%0;
+border-radius:0 220% 220% 0 /0 180% 180% 0;
 }
 .R:after{
 transform:skew(32deg,0);
@@ -491,10 +518,10 @@ position:absolute;
 content:'';
 width:44px;
 height:40px;
-border-width:14px0 15px15.5px;
+border-width:14px 0 15px 15.5px;
 border-color:#000000;
 border-style:solid;
-border-radius:220%0 0 150% /150%0 0 100%;
+border-radius:220% 0 0 150% /150% 0 0 100%;
 }
 .S:after{
 transform:rotate(198deg);
@@ -504,10 +531,10 @@ top:65px;
 left:21px;
 width:52px;
 height:44px;
-border-width:14px0 15px15px;
+border-width:14px 0 15px 15px;
 border-color:#000000;
 border-style:solid;
-border-radius:240%0 0 110% /140%0 0 100%;
+border-radius:240% 0 0 110% /140% 0 0 100%;
 }
 
 /*THE LETTER T*/
@@ -519,7 +546,7 @@ top:12.5px;
 left:10px;
 width:100px;
 height:125px;
-border-top:solid 15px#000000;
+border-top:solid 15px #000000;
 }
 .T:before{
 position:absolute;
@@ -540,7 +567,7 @@ top:12.5px;
 left:10px;
 width:60px;
 height:80px;
-border-width:0 16px0 16px;
+border-width:0 16px 0 16px;
 border-color:#000000;
 border-style:solid;
 }
@@ -551,10 +578,10 @@ top:65px;
 left:-16px;
 width:60px;
 height:45px;
-border-width:0 16px15px16px;
+border-width:0 16px 15px 16px;
 border-color:#000000;
 border-style:solid;
-border-radius:0 0 200%200% /0 0 300%300%;
+border-radius:0 0 200% 200% /0 0 300% 300%;
 }
 
 /*THE LETTER V*/
@@ -572,7 +599,7 @@ content:'';
 top:0;
 left:0;
 height:125px;
-border-left:solid 16px#000000;
+border-left:solid 16px #000000;
 }
 .V:after{
 transform:skew(-18deg,0);
@@ -581,7 +608,7 @@ content:'';
 top:0;
 right:0;
 height:125px;
-border-left:solid 16px#000000;
+border-left:solid 16px #000000;
 }
 
 /*THE LETTER W*/
@@ -593,26 +620,26 @@ left:25px;
 width:100px;
 }
 .W:before{
-transform:skew(11deg,0);
+transform:skew(11deg, 0);
 position:absolute;
 content:'';
 top:0;
 left:0;
 width:42px;
 height:125px;
-border-width:0 13px0 15px;
+border-width:0 13px 0 15px;
 border-color:#000000;
 border-style:solid;
 }
 .W:after{
-transform:skew(-11deg,0);
+transform:skew(-11deg, 0);
 position:absolute;
 content:'';
 top:0;
 right:0;
 width:42px;
 height:125px;
-border-width:0 15px0 13px;
+border-width:0 15px 0 13px;
 border-color:#000000;
 border-style:solid;
 }
@@ -686,7 +713,7 @@ top:12.5px;
 left:10px;
 width:90px;
 height:95px;
-border-width:15px0 15px0;
+border-width:15px 0 15px 0;
 border-color:#000000;
 border-style:solid;
 }
