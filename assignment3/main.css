@@ -37,7 +37,9 @@ box-sizing:border-box;
 
 .h .v1,
 .p .v1,
-.n .v1 {
+.n .v1,
+.e .v1,
+.f .v1 {
 	position: absolute;
 	left:0;
 	height:100%;
@@ -47,7 +49,8 @@ box-sizing:border-box;
 }
 
 .h .v2,
-.n .v2 {
+.n .v2,
+.j .v2 {
 	position: absolute;
 	right:0;
 	height:100%;
@@ -94,7 +97,7 @@ box-sizing:border-box;
 	width:100% ;
 	border: 6px solid black;
 	border-top-right-radius: 50%;
-	border-bottom-right-radius: 50%
+	border-bottom-right-radius: 50%;
 }
 
 
@@ -138,8 +141,114 @@ box-sizing:border-box;
 .a .h2 {
 	position: absolute;
 	top:50%;
+	left:36px;
+	height:6px;
+	width:47%;
+	background: black;
+
+}
+
+.b .c1 {
+	position: absolute;
+	top:0;
+	right: 0;
+	height:54%;
+	width:100% ;
+	border: 6px solid black;
+	border-top-right-radius: 50%;
+	border-bottom-right-radius: 50%
+}
+
+.b .c2 {
+	position: absolute;
+	bottom:0;
+	right: 0;
+	height:50%;
+	width:100% ;
+	border: 6px solid black;
+	border-top-right-radius: 50%;
+	border-bottom-right-radius: 50%
+}
+
+.c .c1,
+.g .c1 {
+	position: absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	border:6px solid black;
+	border-right:6px solid white;
+	border-top-left-radius: 50%;
+	border-bottom-left-radius: 50%;
+}
+
+.e .h1,
+.f .h1,
+.i .h1 {
+	position: absolute;
+	top:0;
 	height:6px;
 	width:100%;
 	background: black;
+}
 
+.e .h2,
+.f .h2 {
+	position: absolute;
+	top:50%;
+	height:6px;
+	width:50%;
+	background: black;
+
+}
+
+.e .h3,
+.i .h3 {
+	position: absolute;
+	bottom:0;
+	height:6px;
+	width:100%;
+	background: black;
+}
+
+.g .v3 {
+	position: absolute;
+	right:0;
+	top:89px;
+	height:40%;
+	width:6px;
+	background: black;
+	margin: 0 0 8px 8px;
+}
+
+.g .h4 {
+	position: absolute;
+	top:83px;
+	right:0;
+	height:6px;
+	width:40%;
+	background: black;
+}
+
+.i .v4 {
+	position: absolute;
+	right:68px;
+	top:0;
+	height:100%;
+	width:6px;
+	background: black;
+	margin: 0 0 8px 8px;
+}
+
+.j .c3 {
+	position: absolute;
+	bottom:0;
+	right: 0;
+	height:50%;
+	width:100% ;
+	border: 6px solid black;
+	border-bottom-left-radius: 50%;
+	border-top:white;
+	
 }
