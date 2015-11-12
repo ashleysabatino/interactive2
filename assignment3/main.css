@@ -16,13 +16,115 @@ box-sizing:border-box;
 	z-index: 1;
 }
 
+
 .layer2 {
 	position:absolute;
 	z-index:2;
-	top:50px;
-	left:50px;
+	border-color:magenta;
 }
 
+.layer2 div div.a:before,
+.layer2 div div.a:after,
+.layer2 div div.e:before {
+	background: magenta;
+}
+
+.layer2 .b:hover {
+	left:25px;
+}
+
+.layer2 .a:hover {
+	top:25px;
+}
+
+.layer2 .l:hover {
+	right:25px;
+}
+
+.layer2 .e:hover {
+	bottom:25px;
+}
+
+.layer2 .t:hover {
+	left:25px;
+}
+/* THIS IS THE WEBSITE STUFF */
+
+.container {
+	width:1300px;
+	height:100%;
+	margin:0 auto;
+}
+
+.header {
+	width:1075px;
+	margin:0 auto;
+	text-align: center;
+	z-index: 1;
+}
+
+/*.header2 {
+	position:absolute;
+	width:1075px;
+	margin:0px 500px 100px 0px;
+	left:50px;
+	top:50px;
+	z-index: 2;
+}
+
+.header2 div div,
+.header2 div div:before,
+.header2 div div:after {
+	border-color: magenta;
+}*/
+
+.left {
+	width:600px;
+	height:1000px;
+	border:3px solid black;
+	margin:25px;
+	margin-top:200px;
+	display:block;
+	float:left;
+}
+
+.right {
+	width:300px;
+	height:1000px;
+	border:3px solid black;
+	margin:25px;
+	margin-top:200px;
+	display:block;
+	float:left;
+}
+
+.word {
+	transform: scale(0.4);
+}
+
+.word:hover {
+	background-image:url('images/pasdedeux.gif');
+	height:100%;
+	background-repeat:no-repeat;
+	position: inherit;
+	right:100px;
+	top:500px;
+
+}
+
+
+/*THESE ARE THE GIFS*/
+/*#pasdedeux {
+	display: none;
+}
+
+
+.word:hover ~ #pasdedeux {
+	display:inline-block;
+	cursor: pointer;
+}*/
+
+/* THIS IS ALPHABET STUFF */
 
 .layer2 div div.v1,
 .layer2 div div.v2,
@@ -39,7 +141,12 @@ box-sizing:border-box;
 .p .v1,
 .n .v1,
 .e .v1,
-.f .v1 {
+.f .v1,
+.k .v1,
+.l .v1,
+.m .v1,
+.r .v1,
+.w .v1 {
 	position: absolute;
 	left:0;
 	height:100%;
@@ -50,7 +157,10 @@ box-sizing:border-box;
 
 .h .v2,
 .n .v2,
-.j .v2 {
+.j .v2,
+.m .v2,
+.w .v2,
+.four .v2 {
 	position: absolute;
 	right:0;
 	height:100%;
@@ -59,7 +169,8 @@ box-sizing:border-box;
 	margin: 0 0 8px 8px;
 }
 
-.h .h1 {
+.h .h1,
+.four .h1 {
 	position: absolute;
 	top:50%;
 	height:6px;
@@ -68,7 +179,8 @@ box-sizing:border-box;
 
 }
 
-.o .c1 {
+.o .c1,
+.q .c1 {
 	position: absolute;
 	top:0;
 	left:0;
@@ -89,7 +201,8 @@ box-sizing:border-box;
 	border-bottom-right-radius: 50%
 }
 
-.p .c1 {
+.p .c1,
+.r .c1 {
 	position: absolute;
 	top:0;
 	right: 0;
@@ -101,7 +214,8 @@ box-sizing:border-box;
 }
 
 
-.n .d1 {
+.n .d1,
+.x .d1 {
 	position: absolute;
 	left:5px;
 	height:6px;
@@ -185,7 +299,10 @@ box-sizing:border-box;
 
 .e .h1,
 .f .h1,
-.i .h1 {
+.i .h1,
+.t .h1,
+.z .h1,
+.five .h1 {
 	position: absolute;
 	top:0;
 	height:6px;
@@ -204,7 +321,10 @@ box-sizing:border-box;
 }
 
 .e .h3,
-.i .h3 {
+.i .h3,
+.l .h3,
+.z .h3,
+.two .h3 {
 	position: absolute;
 	bottom:0;
 	height:6px;
@@ -231,7 +351,9 @@ box-sizing:border-box;
 	background: black;
 }
 
-.i .v4 {
+.i .v4,
+.t .v4,
+.one .v4 {
 	position: absolute;
 	right:68px;
 	top:0;
@@ -250,5 +372,306 @@ box-sizing:border-box;
 	border: 6px solid black;
 	border-bottom-left-radius: 50%;
 	border-top:white;
+}
+
+.k .d4 {
+	position: absolute;
+	left:5px;
+	top:75px;
+	height:6px;
+	width:80%;
+	background: black;
+	transform:rotate(37.6deg);
+	transform-origin:0% 0%;
+	-webkit-transform:rotate(37.6deg);
+	-webkit-transform-origin:0% 0%;
+}
+
+.k .d5 {
+	position: absolute;
+	left:5px;
+	top:75px;
+	height:6px;
+	width:80%;
+	background: black;
+	transform:rotate(-41.6deg);
+	transform-origin:0% 0%;
+	-webkit-transform:rotate(-41.6deg);
+	-webkit-transform-origin:0% 0%;
+}
+
+.m .d6 {
+	position: absolute;
+	left:5px;
+	height:6px;
+	width:69%;
+	background: black;
+	transform:rotate(45.6deg);
+	transform-origin:0% 0%;
+	-webkit-transform:rotate(45.6deg);
+	-webkit-transform-origin:0% 0%;
+}
+
+.m .d7 {
+	position: absolute;
+	top:71px;
+	right:-26px;
+	height:6px;
+	width:69%;
+	background: black;
+	transform:rotate(-45.6deg);
+	transform-origin:0% 0%;
+	-webkit-transform:rotate(-45.6deg);
+	-webkit-transform-origin:0% 0%;
+}
+
+.q .d8 {
+	position: absolute;
+	left:88px;
+	bottom:41px;
+	height:6px;
+	width:50%;
+	background: black;
+	transform:rotate(45.6deg);
+	transform-origin:0% 0%;
+	-webkit-transform:rotate(45.6deg);
+	-webkit-transform-origin:0% 0%;
+}
+
+.r .d8 {
+	position: absolute;
+	left:63px;
+	bottom:74px;
+	height:6px;
+	width:67%;
+	background: black;
+	transform:rotate(45.6deg);
+	transform-origin:0% 0%;
+	-webkit-transform:rotate(45.6deg);
+	-webkit-transform-origin:0% 0%;
+}
+
+.u .c4 {
+	position: absolute;
+	bottom:0;
+	right: 0;
+	height:100%;
+	width:100% ;
+	border: 6px solid black;
+	border-bottom-right-radius: 50%;
+	border-top:white;
+}
+
+.v .d4 {
+	position: absolute;
+	bottom:-4px;
+	left:66px;
+	height:6px;
+	width:154px;
+	background: black;
+	transform:rotate(-65.6deg);
+	transform-origin:0% 0%;
+	-webkit-transform:rotate(-65.6deg);
+	-webkit-transform-origin:0% 0%;
+}
+
+.v .d5 {
+	position: absolute;
+	left:5px;
+	height:6px;
+	width:163px;
+	background: black;
+	transform:rotate(65.6deg);
+	transform-origin:0% 0%;
+	-webkit-transform:rotate(65.6deg);
+	-webkit-transform-origin:0% 0%;
+}
+
+.w .d6 {
+	position: absolute;
+	top:73px;
+	right:-28px;
+	height:6px;
+	width:68%;
+	background: black;
+	transform:rotate(45.6deg);
+	transform-origin:0% 0%;
+	-webkit-transform:rotate(45.6deg);
+	-webkit-transform-origin:0% 0%;
+}
+
+.w .d7 {
+	position: absolute;
+	bottom:-2px;
+	left:0px;
+	height:6px;
+	width:69%;
+	background: black;
+	transform:rotate(-45.6deg);
+	transform-origin:0% 0%;
+	-webkit-transform:rotate(-45.6deg);
+	-webkit-transform-origin:0% 0%;
+}
+
+.x .d2,
+.z .d2 {
+	position: absolute;
+	bottom:0;
+	left:5px;
+	height:6px;
+	width:204px;
+	background: black;
+	transform:rotate(-45.6deg);
+	transform-origin:0% 0%;
+	-webkit-transform:rotate(-45.6deg);
+	-webkit-transform-origin:0% 0%;
+}
+
+.y .v4 {
+	position: absolute;
+	right:68px;
+	bottom:0;
+	height:50%;
+	width:6px;
+	background: black;
+	margin: 0 0 8px 8px;
+}
+
+.y .d1 {
+	position: absolute;
+	left:13px;
+	height:6px;
+	width:65%;
+	background: black;
+	transform:rotate(45.6deg);
+	transform-origin:0% 0%;
+	-webkit-transform:rotate(45.6deg);
+	-webkit-transform-origin:0% 0%;
+}
+
+.y .d2 {
+	position: absolute;
+	top:68px;
+	right:-24px;
+	height:6px;
+	width:65%;
+	background: black;
+	transform:rotate(-45.6deg);
+	transform-origin:0% 0%;
+	-webkit-transform:rotate(-45.6deg);
+	-webkit-transform-origin:0% 0%;
+}
+
+.s .c1 {
+	position: absolute;
+	top:0;
+	left: 0;
+	height:53%;
+	width:100% ;
+	border: 6px solid black;
+	border-right:none;
+	border-top-left-radius: 50%;
+	border-bottom-left-radius: 50%;
+}
+
+.s .c2 {
+	position: absolute;
+	top:74px;
+	right: -18px;
+	height:50%;
+	width:100% ;
+	border: 6px solid black;
+	border-left:none;
+	border-top-right-radius: 50%;
+	border-bottom-right-radius: 50%;
+}
+
+
+.three .c1 {
+	position: absolute;
+	top:0;
+	right: 0;
+	height:54%;
+	width:100% ;
+	border: 6px solid black;
+	border-top-right-radius: 50%;
+	border-bottom-right-radius: 50%;
+	border-left:none;
+}
+
+.three .c2,
+.five .c2 {
+	position: absolute;
+	bottom:0;
+	right: 0;
+	height:50%;
+	width:100% ;
+	border: 6px solid black;
+	border-top-right-radius: 50%;
+	border-bottom-right-radius: 50%;
+	border-left:none;
+}
+
+.four .v1{
+	position: absolute;
+	top:0;
+	height:50%;
+	width:6px;
+	background: black;
+	margin: 0 8px 8px 0;
+}
+
+.two .c1 {
+	position: absolute;
+	top:0;
+	right: 0;
+	height:54%;
+	width:100% ;
+	border: 6px solid black;
+	border-top-right-radius: 50%;
+	border-bottom-right-radius: 50%;
+	border-left:none;
 	
+}
+
+.two .d1{
+	position: absolute;
+	bottom:0;
+	left:5px;
+	height:6px;
+	width:95px;
+	background: black;
+	transform:rotate(-45.6deg);
+	transform-origin:0% 0%;
+	-webkit-transform:rotate(-45.6deg);
+	-webkit-transform-origin:0% 0%;
+}
+
+.five .v1 {
+	position: absolute;
+	top:0;
+	height:50%;
+	width:6px;
+	background: black;
+	margin: 0 8px 8px 0;	
+}
+
+.six .v1 {
+	position: absolute;
+	left:0;
+	height:70%;
+	width:6px;
+	background: black;
+	margin: 0 8px 8px 0;
+}
+
+.six .c1 {
+	position: absolute;
+	left:0;
+	bottom:0;
+	right:0;
+	height:70%;
+	width:70%;
+	border:6px solid black;
+	border-radius: 50%
 }
