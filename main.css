@@ -1,0 +1,80 @@
+body {
+	background-color:#F2F2F2;
+	color:#2E2E2E;
+}
+
+.container{
+  width:400px;
+  border:1px solid #2E2E2E;
+  padding:10px;
+  text-align:left;
+  float:left;
+  margin-left: 5px;
+}
+
+.containerb {
+  width:400px;
+  height: 356px;
+  border:1px solid #2E2E2E;
+  float:left;
+  background-image: url(https://s-media-cache-ak0.pinimg.com/originals/cd/4a/c1/cd4ac19a5903b2d1f72625a35aa342cf.jpg);
+  margin-left: 5px;
+}
+
+.containerb:hover {
+	background-image: url(http://38.media.tumblr.com/692cc940bc5fb8b3e8003e234f1cf453/tumblr_mghgifc97M1s330lto1_r1_400.gif);
+	background-size: 400px;
+	background-position: center;
+}
+
+.containerc {
+  width:400px;
+  height: 356px;
+  border:1px solid #2E2E2E;
+  float:left;
+  margin-left: 5px;
+  background-image: url(http://data.whicdn.com/images/29387704/large.gif);
+  background-position: center;
+}
+
+.containerc:hover {
+	background-position: center;
+	background-image: url(http://33.media.tumblr.com/31cd262e96e30167147230b7787f47ea/tumblr_myzg4vS9av1s330lto1_400.gif);
+}
+
+  .containerd {
+  width:400px;
+  height: 356px;
+  border:1px solid #2E2E2E;
+  float:left;
+  background-image: url(http://i293.photobucket.com/albums/mm70/siiing/Rilakkuma.gif);
+  background-size: 500px;
+}
+
+.containerd:hover {
+	background-image: url(http://38.media.tumblr.com/6b7dfa96e0acbefb131cd43f8ffbefda/tumblr_myzgdjNcVL1s330lto1_400.gif);
+	background-size: 400px;
+	background-position: center;
+}
+
+
+p {
+	font-size:15px;
+	font-family:'MuseoSansW01-Rounded100_942388';
+	line-height: 20px;
+}
+
+h1 {
+	text-decoration: none;
+	font-family:'MuseoSansW01-Rounded700';
+	font-size:35px;
+	letter-spacing: 5px;
+}
+
+
+h2 {
+	text-decoration: none;
+	font-family:'MuseoSansW01-Rounded700';
+	font-size:20px;
+	letter-spacing: 1px;
+}
