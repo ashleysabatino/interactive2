@@ -14,6 +14,7 @@ p {
 }
 
 a {
+	font-family:'Handsome W01 Regular';
 	text-decoration: none;
 	color:#F7819F;
 }
@@ -22,7 +23,7 @@ a {
 	font-family:'Handsome W01 Regular';
 	font-size: 25px;
 	color:#F6CED8;
-	position:absolute;
+	position:fixed;
 	top:5px;
 	left:15px;
 }
