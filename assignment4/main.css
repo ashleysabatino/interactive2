@@ -1,0 +1,345 @@
+@charset "UTF-8";
+/*TYPEFACES*/
+body {
+	font-family:'ITC Franklin Gothic LT W01BkCn';
+	font-size: 15px;
+	line-height: 1.4em;
+	color: #011627;
+	background:#FDFFFC;
+	margin:0;
+}
+
+img { max-width: 100%; }
+
+.headline {
+	font-family:'ITC Franklin Gothic LT W01 Hv';
+	font-size: 40px;
+	letter-spacing:.25em;
+	line-height: 1em;
+	text-align: center;
+	margin-bottom:50px;
+	color:#2EC4B6;
+}
+
+
+.container {
+	/*width: 100vw;*/
+	max-width: 700px;
+	background-color: #FDFFFC;
+	padding: 30px;
+	margin: 0 auto;
+}
+
+p {
+	margin-top: 5px;
+	font-family:'ITC Franklin Gothic LT W01BkCn';
+	font-size: 20px;
+	letter-spacing:.15em;
+	text-decoration:none;
+	line-height:1.5em;
+	color: #011627;
+}
+
+p a {
+	text-decoration:none;
+	color:#533C4D;
+}
+
+p a:hover {
+	text-decoration:none;
+	color:#2EC4B6;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+
+.title {
+	font-family:'ITC Franklin Gothic LT W01 Hv';
+	font-size: 50px;
+	line-height: 1.5em;
+	text-align: left;
+	color: #2EC4B6;
+}
+
+/*END OF TYPEFACES*/
+/*NAV NAV NAV NAV*/
+
+.logo {
+	background-image:url("logo.jpg");
+	background-repeat: no-repeat;
+	padding: 20px;
+	width:100px;
+	height:100px;
+	display:block;
+	position: fixed;
+	top:0px;
+	left:5px;
+}
+
+.nava {
+	font-family:'ITC Franklin Gothic LT W01 Hv';
+	font-size: 20px;
+	letter-spacing:.25em;
+	display: block;
+	position:fixed;
+	left:0;
+	top:100px;
+	padding:20px;
+	width:90px;
+	color:#FFFFFF;
+	background-color:#E71D36;
+	text-align: center;
+	margin-bottom: 5px;
+	margin-right:25px;
+	-webkit-transition: background-color .5s ease-out;
+	-moz-transition: background-color .5s ease-out;
+	-o-transition: background-color .5s ease-out;
+	transition: background-color .5s ease-out;
+}
+
+.nava:hover{
+	color: #FFFFFF;
+	background-color: #2EC4B6;
+}
+
+.nava a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+
+.navb {
+	font-family:'ITC Franklin Gothic LT W01 Hv';
+	font-size: 20px;
+	letter-spacing:.25em;
+	display: block;
+	position:fixed;
+	left:0;
+	top:200px;
+	padding:20px;
+	width:90px;
+	color:#FFFFFF;
+	background-color:#E71D36;
+	text-align: center;
+	margin-bottom: 5px;
+	margin-right:25px;
+	-webkit-transition: background-color .5s ease-out;
+	-moz-transition: background-color .5s ease-out;
+	-o-transition: background-color .5s ease-out;
+	transition: background-color .5s ease-out;
+}
+
+.navb:hover{
+	color: #FFFFFF;
+	background-color: #2EC4B6;
+}
+
+.navb a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+
+.navc {
+	font-family:'ITC Franklin Gothic LT W01 Hv';
+	font-size: 20px;
+	letter-spacing:.25em;
+	display: block;
+	position:fixed;
+	left:0;
+	top:300px;
+	padding:20px;
+	width:90px;
+	color:#FFFFFF;
+	background-color:#E71D36;
+	text-align: center;
+	margin-bottom: 5px;
+	margin-right:25px;
+	-webkit-transition: background-color .5s ease-out;
+	-moz-transition: background-color .5s ease-out;
+	-o-transition: background-color .5s ease-out;
+	transition: background-color .5s ease-out;
+}
+
+.navc:hover{
+	color: #FFFFFF;
+	background-color: #2EC4B6;
+}
+
+.navc a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+/*LIST OF BEANIES*/
+
+
+.listl {
+	display:block;
+	color:#011627;
+	width: 48%;
+	float: left;
+}
+
+.listl li {
+	
+	list-style: none;
+	font-family:'ITC Franklin Gothic LT W01BkCn';
+	font-size: 20px;
+	text-align: center;
+	letter-spacing:.15em;
+	line-height: 1.5em;
+	text-decoration:none;
+
+	color: #011627;
+}
+
+.listl li a{
+	text-decoration: none;
+	color:#011627;
+}
+
+.listl li a:visited {
+	text-decoration: none;
+	color:#011627;
+}
+
+.listl li a:hover {
+	color:#2EC4B6;
+}
+
+
+.listr {
+	display:block;
+	color:#011627;
+	width: 48%;
+	float: left;
+}
+
+.listr li {
+	
+	list-style: none;
+	font-family:'ITC Franklin Gothic LT W01BkCn';
+	font-size: 20px;
+	text-align: center;
+	letter-spacing:.15em;
+	line-height: 1.5em;
+	text-decoration:none;
+	color: #011627;
+}
+
+.listr li a{
+	text-decoration: none;
+	color:#011627;
+}
+
+.listr li a:visited {
+	text-decoration: none;
+	color:#011627;
+}
+
+.listr li a:hover {
+	color:#2EC4B6;
+}
+
+.clearer {
+	clear: both;
+}
+
+/*BEANIE INFO*/
+
+.beanie {
+	border:1px solid #E71D36;
+	padding:20px;
+	margin-bottom:50px;
+	display:block;
+	text-align: center;
+}
+
+.bbl {
+	width: 46%;
+	border:1px solid #E71D36;
+	padding:8px;
+	margin-bottom:50px;
+	float: left;
+	margin-right: 5px;
+	display:block;
+	text-align: center;
+}
+
+.bbr {
+	width: 47%;
+	border:1px solid #E71D36;
+	padding:8px;
+	margin-bottom:50px;
+	float: left;
+	display:block;
+	text-align: center;
+}
+
+.button {
+	padding:20px;
+	font-family:'ITC Franklin Gothic LT W01 Hv';
+	font-size: 15px;
+	line-height: 1.5em;
+	color:#FFFFFF;
+	background-color:#E71D36;
+	display:block;
+	position:fixed;
+	bottom:5px;
+	left:0px;
+}
+
+.button:hover {
+	background-color: #2EC4B6;
+}
+
+.footer {
+	width: 100%;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	font-size: 9px;
+	line-height: 1.4em;
+	background-color:#b6acb5;
+	text-align: center;
+	position:fixed;
+	bottom:0;
+	margin-bottom:10px;
+	background:#F1F2F2;
+}
+
+
+/*MEDIA QUERY*/
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 600px) {
+
+  .listr,
+  .listl {
+  	float: none;
+  	width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+
+}
+
+@media screen and (max-width: 320px) {
+
+}
+
+/* CSS Document */
